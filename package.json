@@ -25,5 +25,8 @@
   "homepage": "https://github.com/toxin-don/rails-security-pr-digest#readme",
   "devDependencies": {
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1"
   }
 }
