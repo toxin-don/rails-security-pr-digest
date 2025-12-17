@@ -1,0 +1,29 @@
+{
+  "name": "rails-security-pr-digest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "generate": "node scripts/generate.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toxin-don/rails-security-pr-digest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toxin-don/rails-security-pr-digest/issues"
+  },
+  "homepage": "https://github.com/toxin-don/rails-security-pr-digest#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
