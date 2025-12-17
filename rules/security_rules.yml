@@ -1,0 +1,53 @@
+version: 1
+repo:
+  owner: rails
+  name: rails
+  defaultBranch: main
+
+window:
+  type: hours
+  value: 24
+
+filter:
+  mergedOnly: true
+  baseBranches: ["main"]
+
+decision:
+  threshold: 8
+
+strongSignals:
+  patterns:
+    - "(?i)\\bCVE-\\d{4}-\\d+\\b"
+    - "(?i)\\bGHSA-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}\\b"
+    - "(?i)\\bsecurity advisory\\b"
+    - "(?i)@rails/security"
+
+scoring:
+  labelWeights:
+    security: 10
+    vulnerability: 10
+    cve: 10
+    "security-fix": 10
+
+  textKeywordWeights:
+    "(?i)\\bcsrf\\b": 4
+    "(?i)content-security-policy|\\bcsp\\b": 4
+    "(?i)\\bxss\\b": 4
+    "(?i)sql\\s*injection|(?i)\\bsqli\\b": 5
+    "(?i)open\\s*redirect": 4
+    "(?i)path\\s*traversal": 5
+    "(?i)\\bdeseriali[sz]ation\\b|\\byaml\\b|\\bmarshal\\b": 5
+    "(?i)\\bsamesite\\b": 3
+    "(?i)\\bsession(s)?\\b|\\bcookie(s)?\\b": 3
+    "(?i)\\bsanitize\\b|\\besca(ping|pe)\\b": 2
+
+  pathWeights:
+    "^actionpack/": 4
+    "^actionview/": 3
+    "^actiondispatch/": 4
+    "^activesupport/": 3
+    "activesupport/.*/message_(verifier|encryptor)": 6
+    "activesupport/.*/security_utils": 6
+    "^activerecord/": 2
+    "^activestorage/": 2
+    "^guides/": 1
