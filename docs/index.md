@@ -1,6 +1,5 @@
-# rails-security-pr-digest
+# Latest digest
 
-This site is generated daily by GitHub Actions.
+Generated at: 2025-12-17T16:41:56.179Z
 
-- Target: rails/rails (merged PRs)
-- Filter: security-related (rule-based)
+> PR collection will be implemented next.
