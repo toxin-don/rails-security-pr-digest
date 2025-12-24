@@ -1,5 +1,9 @@
-# Latest digest
+# rails-security-pr-digest
 
-Generated at: 2025-12-17T16:52:40.839Z
+Generated at: **2025-12-24T20:33:27.272Z**
+Window start: **2025-12-23T20:33:24.609Z**
+Target: **rails/rails**
 
-> PR collection will be implemented next.
+## Latest security-related merged PRs
+
+No matching PRs in this window.
