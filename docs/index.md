@@ -1,7 +1,7 @@
 # rails-security-pr-digest
 
-Generated at: **2025-12-26T20:32:56.856Z**
-Window start: **2025-12-25T20:32:56.585Z**
+Generated at: **2025-12-27T20:33:08.919Z**
+Window start: **2025-12-26T20:33:08.738Z**
 Target: **rails/rails**
 
 ## Latest security-related merged PRs
